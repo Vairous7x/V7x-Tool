@@ -8,10 +8,12 @@ V7x Team (-_^)
 
 Uploaded 23/7/2019
 
-How to Use..?
+[HOW TO USE..?]
 
-1- chmod +x V7x_Tool.py
+1- https://github.com/Vairous7x/V7x-Tool
 
-2- V7x_Tool.py
+2- chmod +x V7x_Tool.py
+
+3- V7x_Tool.py
 
 Enjoy.... ("_^)
