@@ -13,6 +13,7 @@ V7x-Tool is great start for all Linux beginner's, you can run real linux emulato
 
 2- chmod +x V7x_Tool.py
 
-3- V7x_Tool.py
+3-python V7x_Tool.py
 
 Enjoy.... ("_^)
+   يا يونس عايز اكلمك علي ضروري ودي علي فكره تاني مره اقولهالگ وشكرا لتقيدرك ليا
